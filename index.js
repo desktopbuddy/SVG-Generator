@@ -1,6 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const { listenerAdded } = require("emittery");
+const {Circle,Square,Triangle} = require("./lib/shapes")
 
 const questions = [
     {
