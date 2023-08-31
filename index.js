@@ -1,13 +1,12 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const { listenerAdded } = require("emittery");
-const {Circle,Square,Triangle} = require("./lib/shapes")
+const {Circle,Square,Triangle} = require("./lib/shapes");
 
 const questions = [
     {
         type: "list",
         message: "What shape do you want?",
-        choices: ["Circle", "Square", "Triangle"]
+        choices: ["Circle", "Square", "Triangle"],
         name: "shape"
     },
     {
